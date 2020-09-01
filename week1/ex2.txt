@@ -1,0 +1,16 @@
+  285  cd ~/week1
+  286  ls
+  287  cd ~/
+  288  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+  289  cd ~/week1 
+  290  ls
+  291  cd ~/
+  292  ls /usr/bin | grep gcc | sort -r > ~/week1/ex1.txt
+  293  cd ~/week1
+  294  ls
+  295  cd ~/week1
+  296  ls
+  297  cd ~/
+  298  ls /usr/bin |grep gcc| sort -r > ~/week1/ex1.txt
+  299  cd ~/week1
+  300  ls
