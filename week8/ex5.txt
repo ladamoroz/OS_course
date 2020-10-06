@@ -1,0 +1,4 @@
+Virtual and physical address.
+Physical address refer to the hardware address in physical memory. 
+Virtual address refer to virtual space used by process.
+Virtual addresses are mapped to physical addresses 

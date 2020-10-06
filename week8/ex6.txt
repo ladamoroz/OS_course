@@ -1,0 +1,4 @@
+16 bit virtual address => 2^16 bytes in a byte addressable machine
+8K page => 2^13 bytes 
+Hence, the number of addressable pages is 2^16/2^13 = 2^3 = 8 
+Answer: number of entries in single-level linear page table is 8
