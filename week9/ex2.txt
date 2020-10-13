@@ -1,0 +1,5 @@
+1. To increase the Hit/Miss ratio we can fill the entire input file with a entities of one  number. 
+2. To reduce the Hit/Miss ratio it is necessary that there are no duplicate numbers in the input file.
+
+At first case I just fill file with all ones and I get hit = 999 & miss 1 => hit/miss = 999
+At second case I just fill file with consecutive numbers from 1 to 100 and I get hit = 0 & miss = 1000 => hit/miss = 0 
