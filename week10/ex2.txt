@@ -1,0 +1,6 @@
+Step 1:
+./week1/file.txt
+./week10/_ex2.txt
+
+Step 2:
+Removed all links. Output is none.
