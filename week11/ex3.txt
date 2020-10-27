@@ -1,0 +1,11 @@
+For the first code:
+Hello
+Hello
+--------------------
+For the second code:
+Hello
+
+
+--------------------
+
+In the second case "\n" works as flush and frees the buffer. After printf("Hello\n") buffer is empty and fork does not copy it. Because of this in second case only one Hello is printed. 
