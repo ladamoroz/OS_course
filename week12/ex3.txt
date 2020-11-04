@@ -1,0 +1,26 @@
+With O_SYNC
+
+ladamorozova@MacBook-Air-Lada week12 % gcc -o copy copy.c
+ladamorozova@MacBook-Air-Lada week12 % time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.00s system 1% cpu 0.347 total
+
+ladamorozova@MacBook-Air-Lada week12 % gcc -o copy copy.c -DBUF_SIZE=64
+ladamorozova@MacBook-Air-Lada week12 % time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.00s system 1% cpu 0.359 total
+
+ladamorozova@MacBook-Air-Lada week12 % gcc -o copy copy.c -DBUF_SIZE=32
+ladamorozova@MacBook-Air-Lada week12 % time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.00s system 2% cpu 0.218 total
+
+WITHOUT  O_SYNC
+ladamorozova@MacBook-Air-Lada week12 % gcc -o copy copy.c
+ladamorozova@MacBook-Air-Lada week12 % time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.00s system 1% cpu 0.373 total
+
+ladamorozova@MacBook-Air-Lada week12 % gcc -o copy copy.c -DBUF_SIZE=64
+ladamorozova@MacBook-Air-Lada week12 % time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.00s system 2% cpu 0.213 total
+
+ladamorozova@MacBook-Air-Lada week12 % gcc -o copy copy.c -DBUF_SIZE=32
+ladamorozova@MacBook-Air-Lada week12 % time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.00s system 3% cpu 0.132 total
